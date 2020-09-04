@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+table, th, td {
+    border-collapse: collapse;
+}
+th, td {
+  padding: 20px;
+}
+</style>
+</head>
+ 
+<body bgcolor="pink">
+   <h1 style="text-align:left;">UNIVERSITIES  PERFORMANCE  SCORE</h1>
+	
+              
+    <form action='/predict' method="post" class="col s12">
+      <table  style="width:40%" bgcolor="white">
+	  <tr ><td >
+	  <b>Quality Of Education</b>
+            <td> 	
+          <input  name="Quality Of Education"  placeholder="enter rank"  >
+        </tr>
+
+
+        <tr><td>
+			<b>Alumni Employment</b>
+            <td>  
+            <input  name="Alumni Employment" placeholder="enter rank"> 
+		</tr>
+
+        <tr><td>
+			<b>Quality Of Faculty</b>
+            <td>  
+			<input  name="Quality Of Faculty" placeholder="enter rank"  >
+        </tr>
+
+          <tr><td>
+      <b>Citations</b>
+            <td>  
+      <input  name="Citations"  placeholder="enter rank" >
+        </tr>
+
+           <tr><td>
+      <b>Influence</b>
+            <td>  
+      <input  name="Influence" placeholder="enter rank"  >
+        </tr>
+
+		</table>
+    <br>
+          <button style="text-align:center;" type="submit"  >Predict score</button>
+      </div>
+    </form>
+       
+
+      <br>{{pred}}</br>
+
+    
+
+  </body>
+</html>
